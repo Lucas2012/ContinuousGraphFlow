@@ -63,13 +63,13 @@ python src/graph_generation/train_graphflow.py  --graph_type community_small --d
 Graph generation:
 
 <div align='center'>
-  <img src='results_graph.png' width='512px'>
+  <img src='images/results_graph.png' width='512px'>
 </div>
 
 Scene layouts generation:
 
 <div align='center'>
-  <img src='results_scene.png' width='512px'>
+  <img src='images/results_scene.png' width='512px'>
 </div>
 
 ## Contact
