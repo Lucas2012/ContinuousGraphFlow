@@ -1,5 +1,39 @@
-## Continuous Graph Flow
-This repository contains the PyTorch implementation of continuous graph flow. For details, refer to the paper hosted on [arXiv](https://arxiv.org/abs/1908.02436).
+# GraphNeuralODE
+
+This is the official implementation for paper: 
+
+[Continuous Graph Flow](https://arxiv.org/pdf/1908.02436.pdf)
+
+[Zhiwei Deng*](http://www.sfu.ca/~zhiweid/), [Megha Nawhal*](http://www.sfu.ca/~mnawhal/), [Lili Meng](https://lilimeng1103.wixsite.com/research-site) and [Greg Mori](http://www2.cs.sfu.ca/~mori/)
+
+Published in ICML 2020 Workshop on Graph Representation Learning and Beyond
+
+[Webpage](http://www.sfu.ca/~mnawhal/projects/cgf.html)
+
+If you find this code helpful in your research, please cite
+
+```
+@inproceedings{deng2020continuous,
+  title={Continuous graph flow},
+  author={Deng, Zhiwei and Nawhal, Megha and Meng, Lili and Mori, Greg},
+  booktitle={Proceedings of the International Conference on Machine Learning Workshop on Graph Representation Learning and Beyond},
+  year={2020}
+}
+```
+
+## Contents
+1. [Overview](#overview)
+2. [Getting started](#setup)
+3. [Sample Usage](#usage)
+4. [Results](#results)
+
+## Overview
+
+We propose a flow-based generative model for graph-structured data, termed Continuous Graph Flow (CGF). CGF is formulated as a system of ordinary differential equations (reversible), uses **Continuous Message Passing** to transform node states over time (continuous). Highlights for the model: extending flow models to handle variable input dimensions; ability to model reusable dependencies in among dimensions; reversible and memory-efficient.
+
+<div align='center'>
+  <img src='model_fig.png' width='512px'>
+</div>
 
 ## Getting started
 - Clone repository
