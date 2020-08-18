@@ -1,0 +1,10 @@
+torch
+torchvision
+scikit-learn
+scikit-image
+h5py
+community
+networkx==2.2
+pycocotools
+git+https://github.com/rtqichen/torchdiffeq
+
