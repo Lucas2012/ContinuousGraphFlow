@@ -1,4 +1,4 @@
-# GraphNeuralODE
+# ContinuousGraphFlow
 
 This is the official implementation for paper: 
 
@@ -26,13 +26,14 @@ If you find this code helpful in your research, please cite
 2. [Getting started](#setup)
 3. [Sample Usage](#usage)
 4. [Results](#results)
+5. [Contact](#contact)
 
 ## Overview
 
 We propose a flow-based generative model for graph-structured data, termed Continuous Graph Flow (CGF). CGF is formulated as a system of ordinary differential equations (reversible), uses **Continuous Message Passing** to transform node states over time (continuous). Highlights for the model: extending flow models to handle variable input dimensions; ability to model reusable dependencies in among dimensions; reversible and memory-efficient.
 
 <div align='center'>
-  <img src='model_fig.png' width='512px'>
+  <img src='images/model_fig.png' width='512px'>
 </div>
 
 ## Getting started
@@ -57,6 +58,19 @@ python src/puzzle_graph/train_graphflow.py --data /data --dims 64,64 --strides 1
 python src/graph_generation/train_graphflow.py  --graph_type community_small --dims 32 --num_blocks 2 
 --result_dir ./output --save ./output --lr 1e-5 --use_logit True
 </pre></code>
+
+## Results
+Graph generation:
+
+<div align='center'>
+  <img src='results_graph.png' width='512px'>
+</div>
+
+Scene layouts generation:
+
+<div align='center'>
+  <img src='results_scene.png' width='512px'>
+</div>
 
 ## Contact
 For further questions, please contact the authors [Zhiwei Deng](https://www.sfu.ca/~zhiweid/) or [Megha Nawhal](https://www.sfu.ca/~mnawhal/).
